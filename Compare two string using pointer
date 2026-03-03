@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+    char str1[]="abc", str2[]="abc";
+    char *p=str1, *q=str2;
+    int flag=1;
+    while(*p!='\0' && *q!='\0'){
+        if(*p != *q){ flag=0; break;}
+        p++; q++;
+    }
+    if(flag && *p=='\0' && *q=='\0') printf("Equal");
+    else printf("Not Equal");
+    return 0;
+}
