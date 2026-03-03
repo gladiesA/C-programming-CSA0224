@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void totalBill(int qty, int price) {
+    printf("Total Bill = %d\n", qty * price);
+}
+
+int main() {
+    int choice = 1;   // 1=Rice, 2=Milk, 3=Bread
+    int qty = 2;
+
+    switch(choice) {
+        case 1: totalBill(qty, 50); break;
+        case 2: totalBill(qty, 30); break;
+        case 3: totalBill(qty, 20); break;
+        default: printf("Invalid Choice");
+    }
+    return 0;
+}
