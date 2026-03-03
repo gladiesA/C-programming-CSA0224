@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+struct Student {
+    int roll;
+};
+
+int main() {
+    struct Student s[2] = {{1},{2}};
+
+    for(int i=0;i<2;i++)
+        printf("Roll=%d\n", s[i].roll);
+
+    return 0;
+}
