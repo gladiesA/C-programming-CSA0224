@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    char str[] = "hello";
+    char *p = str;
+    int vowels = 0, consonants = 0;
+
+    while(*p) {
+        if(*p=='a'||*p=='e'||*p=='i'||*p=='o'||*p=='u')
+            vowels++;
+        else
+            consonants++;
+        p++;
+    }
+
+    printf("Vowels = %d\nConsonants = %d", vowels, consonants);
+    return 0;
+}
